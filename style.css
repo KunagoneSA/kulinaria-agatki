@@ -390,13 +390,6 @@ section[id] {
   fill: var(--orange);
 }
 
-.wave--to-white {
-  background: var(--orange);
-}
-
-.wave--to-white path {
-  fill: var(--white);
-}
 
 /* ============================================
    DLA KOGO — tekst + ilustracja warzyw
@@ -634,10 +627,10 @@ section[id] {
   line-height: 1.6;
 }
 
-.gdzie__cta {
+.gdzie__cta-bar {
   text-align: center;
-  padding: 40px 0;
-  background: var(--white);
+  padding: 36px 0;
+  background: var(--green-dark);
 }
 
 @media (max-width: 768px) {
