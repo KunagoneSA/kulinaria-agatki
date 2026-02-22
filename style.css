@@ -67,9 +67,10 @@ section[id] {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 .navbar__inner {
@@ -113,6 +114,13 @@ section[id] {
 
 .navbar__links a:hover {
   color: var(--orange);
+}
+
+.navbar__link--highlight {
+  background: var(--orange);
+  color: var(--white) !important;
+  padding: 6px 18px;
+  border-radius: 20px;
 }
 
 .navbar__toggle {
