@@ -34,39 +34,77 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <!-- Górna część: zielone tło z warzywami i logo -->
+  <!-- Górna część: zielone tło z liśćmi sałaty, warzywami i logo -->
   <div class="hero__top">
-    <div class="hero__veggies">
-      <!-- Dekoracyjne SVG warzyw -->
-      <svg class="hero__veg hero__veg--lettuce" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="100" cy="80" rx="95" ry="75" fill="#4CAF50" opacity="0.8"/>
-        <ellipse cx="80" cy="60" rx="60" ry="50" fill="#66BB6A" opacity="0.7"/>
-        <ellipse cx="120" cy="90" rx="50" ry="40" fill="#81C784" opacity="0.6"/>
-      </svg>
-      <svg class="hero__veg hero__veg--lettuce2" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="100" cy="80" rx="95" ry="75" fill="#43A047" opacity="0.7"/>
-        <ellipse cx="70" cy="70" rx="55" ry="45" fill="#66BB6A" opacity="0.6"/>
-      </svg>
-      <svg class="hero__veg hero__veg--tomato" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="30" cy="32" r="26" fill="#E53935"/>
-        <path d="M22 12 Q30 4 38 12" stroke="#4CAF50" stroke-width="3" fill="none"/>
-      </svg>
-      <svg class="hero__veg hero__veg--tomato2" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="25" cy="27" r="22" fill="#C62828"/>
-        <path d="M18 10 Q25 3 32 10" stroke="#388E3C" stroke-width="2.5" fill="none"/>
-      </svg>
-      <svg class="hero__veg hero__veg--pepper" viewBox="0 0 40 80" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 10 Q35 30 30 60 Q25 75 20 75 Q15 75 10 60 Q5 30 20 10Z" fill="#FF6F00"/>
-        <path d="M17 5 Q20 0 23 5" stroke="#388E3C" stroke-width="2" fill="none"/>
-      </svg>
-      <svg class="hero__veg hero__veg--carrot" viewBox="0 0 30 90" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15 15 Q25 40 20 80 L15 88 L10 80 Q5 40 15 15Z" fill="#EF6C00"/>
-        <path d="M10 10 Q15 0 20 10" stroke="#388E3C" stroke-width="2" fill="none"/>
-      </svg>
-      <svg class="hero__veg hero__veg--lemon" viewBox="0 0 55 50" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="28" cy="25" rx="25" ry="22" fill="#FDD835"/>
-      </svg>
-    </div>
+    <!-- Liście sałaty — duże, organiczne kształty w tle -->
+    <svg class="hero__leaves" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <!-- Duży liść sałaty lewy górny -->
+      <path d="M-60 -20 C20 40, 80 -10, 160 60 C200 100, 140 160, 80 140 C40 130, -20 100, -60 40Z" fill="#4CAF50" opacity="0.85"/>
+      <path d="M-40 0 C10 30, 60 0, 120 50 C150 75, 100 120, 50 110 C20 100, -20 80, -40 30Z" fill="#66BB6A" opacity="0.7"/>
+      <path d="M-80 60 C-20 100, 40 50, 120 100 C160 120, 130 180, 60 170 C10 160, -50 140, -80 90Z" fill="#388E3C" opacity="0.6"/>
+      <!-- Duży liść sałaty prawy górny -->
+      <path d="M1050 -30 C1100 20, 1160 -20, 1260 30 C1300 60, 1250 130, 1180 120 C1130 110, 1060 80, 1050 20Z" fill="#43A047" opacity="0.8"/>
+      <path d="M1080 10 C1120 50, 1180 20, 1240 60 C1270 80, 1220 140, 1160 130 C1120 120, 1070 90, 1080 40Z" fill="#66BB6A" opacity="0.65"/>
+      <path d="M1100 -50 C1150 0, 1220 -30, 1280 10 C1310 30, 1270 90, 1200 80 C1150 70, 1090 40, 1100 -10Z" fill="#2E7D32" opacity="0.75"/>
+      <!-- Liście luzem lewy dolny -->
+      <path d="M30 250 C70 210, 130 240, 170 290 C190 320, 140 360, 80 340 C40 330, 10 300, 30 250Z" fill="#4CAF50" opacity="0.5"/>
+      <path d="M-30 300 C20 270, 80 290, 110 340 C130 370, 80 400, 20 380 C-20 370, -40 340, -30 300Z" fill="#388E3C" opacity="0.45"/>
+      <!-- Liście luzem prawy dolny -->
+      <path d="M1020 280 C1060 250, 1120 270, 1170 310 C1200 340, 1150 380, 1090 370 C1040 360, 1000 330, 1020 280Z" fill="#43A047" opacity="0.5"/>
+      <path d="M1120 320 C1160 290, 1210 310, 1250 350 C1270 370, 1230 420, 1170 400 C1130 390, 1100 360, 1120 320Z" fill="#2E7D32" opacity="0.4"/>
+      <!-- Pomidor lewy -->
+      <circle cx="200" cy="60" r="28" fill="#E53935"/>
+      <circle cx="200" cy="60" r="22" fill="#EF5350" opacity="0.6"/>
+      <path d="M190 35 Q200 25 210 35" stroke="#4CAF50" stroke-width="3" fill="none"/>
+      <line x1="200" y1="26" x2="200" y2="35" stroke="#4CAF50" stroke-width="2"/>
+      <!-- Pomidor prawy dolny -->
+      <circle cx="1000" cy="350" r="24" fill="#C62828"/>
+      <circle cx="1000" cy="350" r="18" fill="#E53935" opacity="0.5"/>
+      <path d="M992 328 Q1000 320 1008 328" stroke="#388E3C" stroke-width="2.5" fill="none"/>
+      <!-- Pomidorek mały -->
+      <circle cx="350" cy="360" r="16" fill="#E53935"/>
+      <path d="M344 346 Q350 340 356 346" stroke="#4CAF50" stroke-width="2" fill="none"/>
+      <!-- Papryka pomarańczowa -->
+      <path d="M900 40 C920 60, 930 100, 925 140 C922 160, 910 165, 900 160 C890 165, 878 160, 875 140 C870 100, 880 60, 900 40Z" fill="#FF6F00" opacity="0.9"/>
+      <path d="M895 30 Q900 18 905 30" stroke="#388E3C" stroke-width="2.5" fill="none"/>
+      <line x1="900" y1="18" x2="900" y2="32" stroke="#388E3C" stroke-width="2"/>
+      <!-- Marchewka -->
+      <g transform="translate(160, 310) rotate(-30)">
+        <path d="M10 0 C18 20, 16 60, 12 85 L8 85 C4 60, 2 20, 10 0Z" fill="#EF6C00"/>
+        <path d="M5 -8 Q10 -16 15 -8" stroke="#388E3C" stroke-width="2" fill="none"/>
+        <path d="M3 -5 Q10 -18 17 -5" stroke="#4CAF50" stroke-width="1.5" fill="none"/>
+      </g>
+      <!-- Cytryna -->
+      <ellipse cx="850" cy="370" rx="26" ry="20" fill="#FDD835" opacity="0.9"/>
+      <ellipse cx="850" cy="370" rx="18" ry="14" fill="#FFEE58" opacity="0.5"/>
+      <!-- Plasterek cytryny -->
+      <circle cx="280" cy="140" r="20" fill="#FDD835" opacity="0.8"/>
+      <circle cx="280" cy="140" r="14" fill="#FFF9C4" opacity="0.7"/>
+      <line x1="280" y1="128" x2="280" y2="152" stroke="#FDD835" stroke-width="1"/>
+      <line x1="268" y1="140" x2="292" y2="140" stroke="#FDD835" stroke-width="1"/>
+      <line x1="272" y1="132" x2="288" y2="148" stroke="#FDD835" stroke-width="1"/>
+      <line x1="272" y1="148" x2="288" y2="132" stroke="#FDD835" stroke-width="1"/>
+      <!-- Ogórek -->
+      <g transform="translate(750, 50) rotate(20)">
+        <rect x="0" y="0" width="18" height="60" rx="9" fill="#558B2F"/>
+        <rect x="3" y="3" width="12" height="54" rx="6" fill="#689F38" opacity="0.6"/>
+      </g>
+      <!-- Czerwona papryczka chili -->
+      <g transform="translate(480, 350) rotate(15)">
+        <path d="M8 0 C15 15, 18 40, 12 60 C10 65, 6 65, 4 60 C-2 40, 1 15, 8 0Z" fill="#D32F2F"/>
+        <path d="M5 -5 Q8 -12 11 -5" stroke="#388E3C" stroke-width="1.5" fill="none"/>
+      </g>
+      <!-- Liść bazylii -->
+      <g transform="translate(650, 30) rotate(-10)">
+        <path d="M15 0 C25 8, 30 25, 22 38 C18 42, 12 42, 8 38 C0 25, 5 8, 15 0Z" fill="#43A047" opacity="0.8"/>
+        <line x1="15" y1="5" x2="15" y2="35" stroke="#2E7D32" stroke-width="1" opacity="0.5"/>
+      </g>
+      <!-- Liść bazylii 2 -->
+      <g transform="translate(500, 20) rotate(5)">
+        <path d="M12 0 C20 6, 24 20, 18 30 C14 34, 10 34, 6 30 C0 20, 4 6, 12 0Z" fill="#388E3C" opacity="0.7"/>
+        <line x1="12" y1="4" x2="12" y2="28" stroke="#2E7D32" stroke-width="1" opacity="0.4"/>
+      </g>
+    </svg>
     <div class="hero__logo-large">
       <span class="hero__logo-misja">MISJA</span>
       <span class="hero__logo-na">NA TALERZU</span>
