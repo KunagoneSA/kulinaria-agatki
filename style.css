@@ -86,7 +86,7 @@ section[id] {
   font-family: var(--font-heading);
   font-weight: 900;
   line-height: 1;
-  color: var(--green-dark);
+  color: var(--orange);
 }
 
 .navbar__logo-top {
