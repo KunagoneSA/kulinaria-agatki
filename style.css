@@ -331,3 +331,64 @@ img {
     font-size: 1.4rem;
   }
 }
+
+/* === GDZIE I JAK === */
+.gdzie {
+  background: var(--white);
+  padding: 60px 0;
+}
+
+.gdzie__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.gdzie h2 {
+  font-size: 1.6rem;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.gdzie h3 {
+  font-size: 1rem;
+  color: var(--orange);
+  margin-bottom: 16px;
+}
+
+.gdzie ul {
+  list-style: none;
+}
+
+.gdzie li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.gdzie li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.gdzie__note {
+  margin-top: 16px;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.gdzie__cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .gdzie__columns {
+    grid-template-columns: 1fr;
+  }
+}
