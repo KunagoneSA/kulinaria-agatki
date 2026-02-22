@@ -880,18 +880,30 @@ section[id] {
 }
 
 /* ============================================
-   KONTAKT
+   KONTAKT — karta z formularzem
    ============================================ */
 .kontakt {
-  background: var(--white);
+  background: var(--gray-light);
   padding: 70px 0;
 }
 
-.kontakt h2 {
+.kontakt__card {
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.kontakt__header {
+  background: var(--green-dark);
+  color: var(--white);
+  padding: 36px 40px;
+}
+
+.kontakt__header h2 {
   font-size: 1.5rem;
-  color: var(--green-dark);
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .kontakt__subtitle {
@@ -902,50 +914,71 @@ section[id] {
 }
 
 .kontakt__desc {
-  color: #666;
-  margin-bottom: 36px;
+  opacity: 0.8;
   font-size: 0.93rem;
 }
 
-.kontakt__columns {
+.kontakt__body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 40px;
+  padding: 40px;
   align-items: start;
+}
+
+.kontakt__info {
+  padding-top: 10px;
 }
 
 .kontakt__item {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 18px;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 24px;
   font-size: 0.95rem;
 }
 
 .kontakt__icon {
   flex-shrink: 0;
-  width: 20px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: rgba(232, 121, 29, 0.1);
+  border-radius: 10px;
+}
+
+.kontakt__label {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
 }
 
 .kontakt__form input,
 .kontakt__form textarea {
   width: 100%;
-  padding: 13px 18px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+  padding: 14px 18px;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
   font-family: var(--font-body);
   font-size: 0.93rem;
   margin-bottom: 14px;
-  transition: border-color 0.2s;
-  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--gray-light);
 }
 
 .kontakt__form input:focus,
 .kontakt__form textarea:focus {
   outline: none;
   border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(232, 121, 29, 0.1);
+  background: var(--white);
 }
 
 .kontakt__form .btn {
@@ -953,9 +986,16 @@ section[id] {
   padding: 15px;
 }
 
+.btn--green {
+  background: var(--green-dark);
+  color: var(--white);
+}
+
 @media (max-width: 768px) {
   .kontakt { padding: 50px 0; }
-  .kontakt__columns { grid-template-columns: 1fr; gap: 30px; }
+  .kontakt__header { padding: 28px 24px; }
+  .kontakt__body { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
+  .kontakt__card { border-radius: 14px; }
 }
 
 /* ============================================

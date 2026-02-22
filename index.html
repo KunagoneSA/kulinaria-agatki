@@ -235,39 +235,43 @@
 <!-- KONTAKT -->
 <section class="kontakt" id="kontakt">
   <div class="container">
-    <h2>KONTAKT</h2>
-    <p class="kontakt__subtitle">Chcesz wziąć udział w „Misji na talerzu"?</p>
-    <p class="kontakt__desc">Napisz do mnie i umów swoją kulinarną misję.</p>
-    <div class="kontakt__columns">
-      <div class="kontakt__info">
-        <div class="kontakt__item">
-          <span class="kontakt__icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8791D" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-          </span>
-          <span>misjanalerzu@gmail.com</span>
-        </div>
-        <div class="kontakt__item">
-          <span class="kontakt__icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8791D" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.37 1.61.7 2.36a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.75.33 1.55.57 2.36.7A2 2 0 0122 16.92z"/></svg>
-          </span>
-          <span>+48 843 693 86</span>
-        </div>
-        <div class="kontakt__item">
-          <span class="kontakt__icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8791D" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#E8791D" stroke="none"/></svg>
-          </span>
-          <span>@misjaNaTalerzu</span>
-        </div>
+    <div class="kontakt__card">
+      <div class="kontakt__header">
+        <h2>KONTAKT</h2>
+        <p class="kontakt__subtitle">Chcesz wziąć udział w „Misji na talerzu"?</p>
+        <p class="kontakt__desc">Napisz do mnie i umów swoją kulinarną misję.</p>
       </div>
-      <form class="kontakt__form" action="https://formsubmit.co/agatawiktoriaolejniczak@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Nowe zgłoszenie — Misja na Talerzu">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://kunagonesa.github.io/kulinaria-agatki/dziekuje.html">
-        <input type="text" name="imie" placeholder="Imię:" aria-label="Imię" required>
-        <input type="tel" name="telefon" placeholder="Telefon:" aria-label="Telefon" required>
-        <textarea name="wiadomosc" placeholder="Wiadomość:" rows="5" aria-label="Wiadomość" required></textarea>
-        <button type="submit" class="btn btn--orange">Wyślij zgłoszenie</button>
-      </form>
+      <div class="kontakt__body">
+        <div class="kontakt__info">
+          <div class="kontakt__item">
+            <span class="kontakt__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8791D" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+            </span>
+            <div>
+              <span class="kontakt__label">Email</span>
+              <span>misjanalerzu@gmail.com</span>
+            </div>
+          </div>
+          <div class="kontakt__item">
+            <span class="kontakt__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8791D" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.37 1.61.7 2.36a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.75.33 1.55.57 2.36.7A2 2 0 0122 16.92z"/></svg>
+            </span>
+            <div>
+              <span class="kontakt__label">Telefon</span>
+              <span>+48 843 693 86</span>
+            </div>
+          </div>
+        </div>
+        <form class="kontakt__form" action="https://formsubmit.co/agatawiktoriaolejniczak@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nowe zgłoszenie — Misja na Talerzu">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://kunagonesa.github.io/kulinaria-agatki/dziekuje.html">
+          <input type="text" name="imie" placeholder="Twoje imię" aria-label="Imię" required>
+          <input type="tel" name="telefon" placeholder="Numer telefonu" aria-label="Telefon" required>
+          <textarea name="wiadomosc" placeholder="Napisz wiadomość..." rows="5" aria-label="Wiadomość" required></textarea>
+          <button type="submit" class="btn btn--green">Wyślij zgłoszenie</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
