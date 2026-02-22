@@ -423,6 +423,15 @@ section[id] {
   fill: var(--gray-light);
 }
 
+.wave--orange-to-green {
+  background: var(--orange);
+  margin-top: -1px;
+}
+
+.wave--orange-to-green path {
+  fill: var(--green-dark);
+}
+
 
 /* ============================================
    DLA KOGO — tekst + ilustracja warzyw
