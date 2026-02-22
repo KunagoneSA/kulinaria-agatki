@@ -163,17 +163,18 @@ section[id] {
    HERO — dwuczęściowy jak w designie
    ============================================ */
 .hero {
-  padding-top: 58px; /* offset navbar */
+  padding-top: 0;
 }
 
 /* Górna część: wideo w tle z logo */
 .hero__top {
   position: relative;
   overflow: hidden;
-  height: 380px;
+  height: 430px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 58px;
   background: #fafafa;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
