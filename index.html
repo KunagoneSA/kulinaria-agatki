@@ -218,10 +218,13 @@
           <span>@misjaNaTalerzu</span>
         </div>
       </div>
-      <form class="kontakt__form" onsubmit="return false;">
-        <input type="text" placeholder="Imię:" aria-label="Imię">
-        <input type="tel" placeholder="Telefon:" aria-label="Telefon">
-        <textarea placeholder="Wiadomość:" rows="5" aria-label="Wiadomość"></textarea>
+      <form class="kontakt__form" action="https://formsubmit.co/agatawiktoriaolejniczak@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nowe zgłoszenie — Misja na Talerzu">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://kunagonesa.github.io/kulinaria-agatki/dziekuje.html">
+        <input type="text" name="imie" placeholder="Imię:" aria-label="Imię" required>
+        <input type="tel" name="telefon" placeholder="Telefon:" aria-label="Telefon" required>
+        <textarea name="wiadomosc" placeholder="Wiadomość:" rows="5" aria-label="Wiadomość" required></textarea>
         <button type="submit" class="btn btn--orange">Wyślij zgłoszenie</button>
       </form>
     </div>
