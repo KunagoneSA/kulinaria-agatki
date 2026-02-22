@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Misja na Talerzu — Warsztaty kulinarne</title>
-  <meta name="description" content="Indywidualne warsztaty gotowania w Oswiecimiu. Naucz sie gotowac zdrowo, smacznie i bez stresu.">
+  <meta name="description" content="Indywidualne warsztaty gotowania w Oświęcimiu. Naucz się gotować zdrowo, smacznie i bez stresu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container navbar__inner">
     <a href="#home" class="navbar__logo">
@@ -29,62 +31,89 @@
     </ul>
   </div>
 </nav>
+
+<!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero__bg">
-    <div class="container hero__content">
-      <div class="hero__logo-large">
-        <span class="hero__logo-misja">MISJA</span>
-        <span class="hero__logo-na">NA TALERZU</span>
+  <!-- Górna część: zielone tło z warzywami i logo -->
+  <div class="hero__top">
+    <div class="hero__veggies">
+      <!-- Dekoracyjne SVG warzyw -->
+      <svg class="hero__veg hero__veg--lettuce" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="95" ry="75" fill="#4CAF50" opacity="0.8"/>
+        <ellipse cx="80" cy="60" rx="60" ry="50" fill="#66BB6A" opacity="0.7"/>
+        <ellipse cx="120" cy="90" rx="50" ry="40" fill="#81C784" opacity="0.6"/>
+      </svg>
+      <svg class="hero__veg hero__veg--lettuce2" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="95" ry="75" fill="#43A047" opacity="0.7"/>
+        <ellipse cx="70" cy="70" rx="55" ry="45" fill="#66BB6A" opacity="0.6"/>
+      </svg>
+      <svg class="hero__veg hero__veg--tomato" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="32" r="26" fill="#E53935"/>
+        <path d="M22 12 Q30 4 38 12" stroke="#4CAF50" stroke-width="3" fill="none"/>
+      </svg>
+      <svg class="hero__veg hero__veg--tomato2" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="27" r="22" fill="#C62828"/>
+        <path d="M18 10 Q25 3 32 10" stroke="#388E3C" stroke-width="2.5" fill="none"/>
+      </svg>
+      <svg class="hero__veg hero__veg--pepper" viewBox="0 0 40 80" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 10 Q35 30 30 60 Q25 75 20 75 Q15 75 10 60 Q5 30 20 10Z" fill="#FF6F00"/>
+        <path d="M17 5 Q20 0 23 5" stroke="#388E3C" stroke-width="2" fill="none"/>
+      </svg>
+      <svg class="hero__veg hero__veg--carrot" viewBox="0 0 30 90" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 15 Q25 40 20 80 L15 88 L10 80 Q5 40 15 15Z" fill="#EF6C00"/>
+        <path d="M10 10 Q15 0 20 10" stroke="#388E3C" stroke-width="2" fill="none"/>
+      </svg>
+      <svg class="hero__veg hero__veg--lemon" viewBox="0 0 55 50" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="28" cy="25" rx="25" ry="22" fill="#FDD835"/>
+      </svg>
+    </div>
+    <div class="hero__logo-large">
+      <span class="hero__logo-misja">MISJA</span>
+      <span class="hero__logo-na">NA TALERZU</span>
+    </div>
+  </div>
+
+  <!-- Dolna część: białe tło ze zdjęciem i tekstem -->
+  <div class="hero__bottom">
+    <div class="container hero__main">
+      <div class="hero__photo">
+        <div class="hero__photo-circle">
+          <span class="hero__photo-label">ZDJĘCIE</span>
+        </div>
       </div>
-      <div class="hero__main">
-        <div class="hero__photo-placeholder">
-          <div class="hero__photo-circle"></div>
-        </div>
-        <div class="hero__text">
-          <h1>MISJA NA TALERZU</h1>
-          <p class="hero__tagline">Indywidualne warsztaty kulinarne, które pokazują, że zdrowe gotowanie może być proste, sycące, naprawdę smaczne i na każdą kieszeń.</p>
-          <p class="hero__desc">Warsztaty to propozycja dla osób, które szukają czegoś więcej niż kolejnej diety. To okazja, by odblokować kuchnię w praktycznym, przyjaznym stylu — bez poradników, za&nbsp;to z&nbsp;prawdziwą praktyką. Pokażę Ci jak gotować mądrze, tanio i&nbsp;zdrowo — tak, żeby posiłki były szybkie, pyszne i&nbsp;dopasowane do Twojego trybu życia. Bez zbędnego stresu, bez wyrzutów — za&nbsp;to z&nbsp;uśmiechem, rozmową i&nbsp;wiedzą, która naprawdę przydaje się w&nbsp;życiu.</p>
-          <a href="#kontakt" class="btn btn--orange">Umów swoją kulinarną misję</a>
-        </div>
+      <div class="hero__text">
+        <h1>MISJA NA TALERZU</h1>
+        <p class="hero__tagline">Indywidualne warsztaty kulinarne, które pokazują, że zdrowe gotowanie może być proste, sycące, naprawdę smaczne i na każdą kieszeń.</p>
+        <p class="hero__desc">Warsztaty to propozycja dla osób, które szukają czegoś więcej niż kolejnej diety. To okazja, by odblokować kuchnię w praktycznym, przyjaznym stylu — bez poradników, za&nbsp;to z&nbsp;prawdziwą praktyką. Pokażę Ci jak gotować mądrze, tanio i&nbsp;zdrowo — tak, żeby posiłki były szybkie, pyszne i&nbsp;dopasowane do Twojego trybu życia. Bez zbędnego stresu, bez wyrzutów — za&nbsp;to z&nbsp;uśmiechem, rozmową i&nbsp;wiedzą, która naprawdę przydaje się w&nbsp;życiu.</p>
+        <a href="#kontakt" class="btn btn--orange">Umów swoją kulinarną misję</a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- DLA KOGO -->
 <section class="dla-kogo" id="warsztaty">
   <div class="container">
     <h2>DLA KOGO JEST „MISJA NA TALERZU"<br>I CO Z NIEJ WYNIESIESZ?</h2>
-    <div class="dla-kogo__intro">
-      <p>„Misja na talerzu" jest dla Ciebie, jeśli chcesz jeść zdrowiej, ale nie masz pojęcia, od czego zacząć, jeśli myślisz, że nie umiesz gotować — a wystarczy tylko ktoś, kto Cię poprowadzi. Pokażę Ci, jak gotować prosto, zdrowo i ekonomicznie, podpowiem Ci sztuczki, które sprawią, że zyskasz pewność i radość z bycia w kuchni na co dzień.</p>
+    <div class="dla-kogo__body">
+      <p class="dla-kogo__intro">„Misja na talerzu" jest dla Ciebie, jeśli chcesz jeść zdrowiej, ale nie masz pojęcia, od czego zacząć, jeśli myślisz, że nie umiesz gotować — a wystarczy tylko ktoś, kto Cię poprowadzi. Pokażę Ci, jak gotować prosto, zdrowo i ekonomicznie. Podpowiem Ci sztuczki, które sprawią, że zyskasz pewność i radość z bycia w kuchni na co dzień.</p>
+      <p class="dla-kogo__label">Warsztaty są dla Ciebie, jeśli:</p>
+      <ul class="dla-kogo__list">
+        <li>chcesz jeść zdrowiej, ale nie wiesz, jak zacząć</li>
+        <li>myślisz, że nie umiesz gotować</li>
+        <li>jesteś zmęczona dietami i efektem jojo</li>
+        <li>nie masz czasu na planowanie posiłków</li>
+        <li>chcesz przemycać więcej warzyw i owoców w codziennych daniach</li>
+        <li>nie wiesz, jak komponować posiłki, by były zbilansowane i sycące</li>
+        <li>chcesz czerpać przyjemność z gotowania</li>
+        <li>chcesz kupować sprytnie, bez przepłacania i marnowania</li>
+      </ul>
+      <p class="dla-kogo__motto"><em>To nie kurs dietetyczny. To kulinarna misja — dla tych, którzy chcą żyć lepiej, jeść mądrzej i gotować z przyjemnością. Spotkania odbywają się w przestronnej, nowoczesnej kuchni w&nbsp;Oświęcimiu — w luźnej, inspirującej atmosferze.</em></p>
     </div>
-    <div class="dla-kogo__columns">
-      <div class="dla-kogo__col">
-        <h3>Dla kogo są warsztaty?</h3>
-        <ul>
-          <li>chcesz jeść zdrowiej, ale nie wiesz, jak zacząć</li>
-          <li>myślisz, że nie umiesz gotować</li>
-          <li>jesteś zmęczona dietami i efektem jojo</li>
-          <li>nie masz czasu na planowanie posiłków</li>
-          <li>chcesz przemycać więcej warzyw i owoców</li>
-          <li>nie wiesz, jak komponować zbilansowane posiłki</li>
-          <li>chcesz czerpać przyjemność z gotowania</li>
-          <li>chcesz kupować sprytnie, bez przepłacania</li>
-        </ul>
-      </div>
-      <div class="dla-kogo__col">
-        <h3>Co zyskujesz?</h3>
-        <ul>
-          <li>uczysz się robić szybkie, zdrowe posiłki, które naprawdę smakują</li>
-          <li>dostajesz menu dopasowane do siebie — gotowe dania zabierasz do domu</li>
-          <li>poznajesz tipy i triki kulinarne do natychmiastowego wdrożenia</li>
-          <li>uczysz się planowania zakupów i gotowania bez marnowania</li>
-          <li>przełamujesz blokadę przed gotowaniem</li>
-          <li>otrzymujesz domowe dodatki: autorska wegeta, lista produktów i akcesoriów „must&nbsp;have"</li>
-        </ul>
-      </div>
-    </div>
-    <p class="dla-kogo__motto"><em>To nie kurs dietetyczny. To kulinarna misja — dla tych, którzy chcą żyć lepiej, jeść mądrzej i gotować z przyjemnością.</em></p>
   </div>
 </section>
+
+<!-- GDZIE I JAK -->
 <section class="gdzie" id="gdzie">
   <div class="container">
     <div class="gdzie__columns">
@@ -119,10 +148,14 @@
     </div>
   </div>
 </section>
+
+<!-- O MNIE -->
 <section class="omnie" id="omnie">
-  <div class="container omnie__inner">
+  <div class="container">
     <div class="omnie__photo">
-      <div class="omnie__photo-circle"></div>
+      <div class="omnie__photo-circle">
+        <span class="omnie__photo-label">ZDJĘCIE</span>
+      </div>
     </div>
     <div class="omnie__text">
       <h2>O MNIE</h2>
@@ -133,10 +166,14 @@
     </div>
   </div>
 </section>
+
+<!-- DECLUTTERING -->
 <section class="declutter">
   <div class="container declutter__inner">
     <div class="declutter__photo">
-      <div class="declutter__photo-rect"></div>
+      <div class="declutter__photo-circle">
+        <span class="declutter__photo-label">ZDJĘCIE</span>
+      </div>
     </div>
     <div class="declutter__text">
       <h2>DECLUTTERING KUCHNI</h2>
@@ -149,11 +186,12 @@
         <li>przejrzeć produkty spożywcze — daty, jakość, przydatność</li>
         <li>stworzyć system, który sprawi, że kuchnia będzie miejscem, w&nbsp;którym lubisz przebywać</li>
       </ul>
-      <p>Bo każda kuchnia może być zapraszająca, zdrowa i Twoja — wystarczy po prostu być świadomą.</p>
+      <p>Bo każda kuchnia może być zapraszająca, zdrowa i&nbsp;Twoja — wystarczy po prostu być świadomą.</p>
     </div>
   </div>
 </section>
 
+<!-- KONTAKT -->
 <section class="kontakt" id="kontakt">
   <div class="container">
     <h2>KONTAKT</h2>
@@ -161,20 +199,36 @@
     <p class="kontakt__desc">Napisz do mnie i umów swoją kulinarną misję.</p>
     <div class="kontakt__columns">
       <div class="kontakt__info">
-        <p><span class="kontakt__icon">✉</span> misjanalerzu@gmail.com</p>
-        <p><span class="kontakt__icon">📞</span> +48 843 693 86</p>
-        <p><span class="kontakt__icon">📷</span> @misjaNaTalerzu</p>
+        <div class="kontakt__item">
+          <span class="kontakt__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8791D" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          </span>
+          <span>misjanalerzu@gmail.com</span>
+        </div>
+        <div class="kontakt__item">
+          <span class="kontakt__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8791D" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.37 1.61.7 2.36a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.75.33 1.55.57 2.36.7A2 2 0 0122 16.92z"/></svg>
+          </span>
+          <span>+48 843 693 86</span>
+        </div>
+        <div class="kontakt__item">
+          <span class="kontakt__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8791D" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#E8791D" stroke="none"/></svg>
+          </span>
+          <span>@misjaNaTalerzu</span>
+        </div>
       </div>
       <form class="kontakt__form" onsubmit="return false;">
         <input type="text" placeholder="Imię:" aria-label="Imię">
         <input type="tel" placeholder="Telefon:" aria-label="Telefon">
-        <textarea placeholder="Wiadomość:" rows="4" aria-label="Wiadomość"></textarea>
+        <textarea placeholder="Wiadomość:" rows="5" aria-label="Wiadomość"></textarea>
         <button type="submit" class="btn btn--orange">Wyślij zgłoszenie</button>
       </form>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer__inner">
     <div class="footer__logo">
