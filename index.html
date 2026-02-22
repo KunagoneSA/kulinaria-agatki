@@ -150,6 +150,44 @@
     </div>
   </div>
 </section>
+
+<section class="kontakt" id="kontakt">
+  <div class="container">
+    <h2>KONTAKT</h2>
+    <p class="kontakt__subtitle">Chcesz wziąć udział w „Misji na talerzu"?</p>
+    <p class="kontakt__desc">Napisz do mnie i umów swoją kulinarną misję.</p>
+    <div class="kontakt__columns">
+      <div class="kontakt__info">
+        <p><span class="kontakt__icon">✉</span> misjanalerzu@gmail.com</p>
+        <p><span class="kontakt__icon">📞</span> +48 843 693 86</p>
+        <p><span class="kontakt__icon">📷</span> @misjaNaTalerzu</p>
+      </div>
+      <form class="kontakt__form" onsubmit="return false;">
+        <input type="text" placeholder="Imię:" aria-label="Imię">
+        <input type="tel" placeholder="Telefon:" aria-label="Telefon">
+        <textarea placeholder="Wiadomość:" rows="4" aria-label="Wiadomość"></textarea>
+        <button type="submit" class="btn btn--orange">Wyślij zgłoszenie</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__logo">
+      <span class="footer__logo-top">MISJA</span>
+      <span class="footer__logo-bottom">NA TALERZU</span>
+    </div>
+    <ul class="footer__links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#warsztaty">O WARSZTATACH</a></li>
+      <li><a href="#gdzie">GDZIE I JAK?</a></li>
+      <li><a href="#omnie">O MNIE</a></li>
+      <li><a href="#kontakt">KONTAKT</a></li>
+    </ul>
+  </div>
+</footer>
+
 <script>
   document.getElementById('navToggle').addEventListener('click', function() {
     document.getElementById('navLinks').classList.toggle('active');
