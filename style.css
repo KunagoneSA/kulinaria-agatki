@@ -116,7 +116,7 @@ section[id] {
   color: var(--orange);
 }
 
-.navbar__link--highlight {
+.navbar__link--active {
   background: var(--orange);
   color: var(--white) !important;
   padding: 6px 18px;

@@ -26,7 +26,7 @@
       <li><a href="#home">HOME</a></li>
       <li><a href="#warsztaty">O WARSZTATACH</a></li>
       <li><a href="#gdzie">GDZIE I JAK?</a></li>
-      <li><a href="#omnie" class="navbar__link--highlight">O MNIE</a></li>
+      <li><a href="#omnie">O MNIE</a></li>
       <li><a href="#kontakt">KONTAKT</a></li>
     </ul>
   </div>
@@ -236,6 +236,25 @@
   document.querySelectorAll('.navbar__links a').forEach(function(link) {
     link.addEventListener('click', function() {
       document.getElementById('navLinks').classList.remove('active');
+    });
+  });
+
+  // Scroll-spy: highlight active section in navbar
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks = document.querySelectorAll('.navbar__links a');
+  window.addEventListener('scroll', function() {
+    var scrollY = window.scrollY + 100;
+    var current = '';
+    sections.forEach(function(section) {
+      if (scrollY >= section.offsetTop) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(function(link) {
+      link.classList.remove('navbar__link--active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('navbar__link--active');
+      }
     });
   });
 </script>
