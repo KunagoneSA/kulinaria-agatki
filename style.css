@@ -209,54 +209,91 @@ section[id] {
   flex-shrink: 0;
 }
 
-.hero__photo-snowman {
+.hero__photo-frame {
   position: relative;
+  width: 320px;
+  height: 320px;
+  flex-shrink: 0;
+}
+
+.hero__photo-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 260px;
-  height: 400px;
-}
-
-.hero__photo-top {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 240px;
-  height: 240px;
+  height: 260px;
   border-radius: 50%;
-  border: 5px solid var(--orange);
+  border: 6px solid var(--orange);
   overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
   z-index: 2;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-.hero__photo-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 5px solid var(--orange);
-  overflow: hidden;
-  z-index: 1;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.hero__photo-top .hero__photo-img {
+.hero__photo-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
 }
 
-.hero__photo-bottom .hero__photo-img {
-  width: 240px;
-  height: 240px;
-  object-fit: cover;
-  object-position: center bottom;
-  margin-left: -20px;
-  margin-top: -80px;
+/* Dekoracyjne warzywka wokół zdjęcia */
+.hero__veggie {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  z-index: 3;
+  animation: veggie-float 3s ease-in-out infinite;
+}
+
+.hero__veggie--1 {
+  width: 52px; height: 52px; font-size: 1.6rem;
+  top: -5px; left: 45%;
+  animation-delay: 0s;
+}
+.hero__veggie--2 {
+  width: 46px; height: 46px; font-size: 1.4rem;
+  top: 15%; right: 2px;
+  animation-delay: 0.4s;
+}
+.hero__veggie--3 {
+  width: 50px; height: 50px; font-size: 1.5rem;
+  bottom: 18%; right: -5px;
+  animation-delay: 0.8s;
+}
+.hero__veggie--4 {
+  width: 40px; height: 40px; font-size: 1.2rem;
+  bottom: -2px; right: 25%;
+  animation-delay: 1.2s;
+}
+.hero__veggie--5 {
+  width: 48px; height: 48px; font-size: 1.4rem;
+  bottom: 2px; left: 18%;
+  animation-delay: 1.6s;
+}
+.hero__veggie--6 {
+  width: 44px; height: 44px; font-size: 1.3rem;
+  bottom: 22%; left: -5px;
+  animation-delay: 2s;
+}
+.hero__veggie--7 {
+  width: 50px; height: 50px; font-size: 1.5rem;
+  top: 18%; left: 0;
+  animation-delay: 2.4s;
+}
+.hero__veggie--8 {
+  width: 42px; height: 42px; font-size: 1.2rem;
+  top: -2px; left: 20%;
+  animation-delay: 2.8s;
+}
+
+@keyframes veggie-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }
 
 .hero__text h1 {
@@ -285,10 +322,9 @@ section[id] {
   .hero__top { height: 380px; }
   .hero__logo-img { width: 180px; }
   .hero__main { flex-direction: column; text-align: center; }
-  .hero__photo-snowman { width: 200px; height: 310px; }
-  .hero__photo-top { width: 185px; height: 185px; }
-  .hero__photo-bottom { width: 155px; height: 155px; }
-  .hero__photo-bottom .hero__photo-img { width: 185px; height: 185px; margin-left: -15px; margin-top: -60px; }
+  .hero__photo-frame { width: 260px; height: 260px; }
+  .hero__photo-circle { width: 210px; height: 210px; }
+  .hero__veggie { transform: scale(0.85); }
   .hero__bottom { padding: 30px 0 40px; }
 }
 
