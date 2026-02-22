@@ -422,64 +422,89 @@ section[id] {
   gap: 50px;
 }
 
-/* Klaster warzyw w białych kółkach */
-.dla-kogo__illustration {
+/* Zdjęcie w kółku z warzywkami */
+.dla-kogo__photo {
   flex-shrink: 0;
 }
 
-.dla-kogo__veggie-cluster {
+.dla-kogo__photo-frame {
   position: relative;
   width: 320px;
   height: 320px;
 }
 
-.dla-kogo__veggie {
+.dla-kogo__photo-circle {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-  object-fit: cover;
-  background: var(--white);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border: 6px solid var(--white);
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  z-index: 2;
 }
 
-.dla-kogo__veggie--1 {
-  width: 90px; height: 90px;
-  top: 0; left: calc(50% - 45px);
+.dla-kogo__photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.dla-kogo__veg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+  z-index: 3;
+  animation: veggie-float 3s ease-in-out infinite;
+}
+
+.dla-kogo__veg--1 {
+  width: 52px; height: 52px; font-size: 1.6rem;
+  top: -5px; left: 45%;
   animation-delay: 0s;
 }
-
-.dla-kogo__veggie--2 {
-  width: 75px; height: 75px;
-  top: 55px; right: 5px;
-  animation-delay: 0.7s;
+.dla-kogo__veg--2 {
+  width: 46px; height: 46px; font-size: 1.4rem;
+  top: 15%; right: 2px;
+  animation-delay: 0.4s;
 }
-
-.dla-kogo__veggie--3 {
-  width: 85px; height: 85px;
-  bottom: 40px; right: 0;
-  animation-delay: 1.4s;
+.dla-kogo__veg--3 {
+  width: 50px; height: 50px; font-size: 1.5rem;
+  bottom: 18%; right: -5px;
+  animation-delay: 0.8s;
 }
-
-.dla-kogo__veggie--4 {
-  width: 80px; height: 80px;
-  bottom: 0; left: calc(50% - 40px);
-  animation-delay: 2.1s;
+.dla-kogo__veg--4 {
+  width: 40px; height: 40px; font-size: 1.2rem;
+  bottom: -2px; right: 25%;
+  animation-delay: 1.2s;
 }
-
-.dla-kogo__veggie--5 {
-  width: 70px; height: 70px;
-  bottom: 50px; left: 5px;
+.dla-kogo__veg--5 {
+  width: 48px; height: 48px; font-size: 1.4rem;
+  bottom: 2px; left: 18%;
+  animation-delay: 1.6s;
+}
+.dla-kogo__veg--6 {
+  width: 44px; height: 44px; font-size: 1.3rem;
+  bottom: 22%; left: -5px;
+  animation-delay: 2s;
+}
+.dla-kogo__veg--7 {
+  width: 50px; height: 50px; font-size: 1.5rem;
+  top: 18%; left: 0;
+  animation-delay: 2.4s;
+}
+.dla-kogo__veg--8 {
+  width: 42px; height: 42px; font-size: 1.2rem;
+  top: -2px; left: 20%;
   animation-delay: 2.8s;
-}
-
-.dla-kogo__veggie--6 {
-  width: 82px; height: 82px;
-  top: 50px; left: 0;
-  animation-delay: 3.5s;
-}
-
-@keyframes veggie-drift {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
 }
 
 /* Tekst */
@@ -520,13 +545,9 @@ section[id] {
   .dla-kogo { padding: 30px 0 40px; }
   .dla-kogo h2 { font-size: 1.4rem; }
   .dla-kogo__content { flex-direction: column; }
-  .dla-kogo__veggie-cluster { width: 260px; height: 260px; }
-  .dla-kogo__veggie--1 { width: 75px; height: 75px; }
-  .dla-kogo__veggie--2 { width: 62px; height: 62px; }
-  .dla-kogo__veggie--3 { width: 70px; height: 70px; }
-  .dla-kogo__veggie--4 { width: 65px; height: 65px; }
-  .dla-kogo__veggie--5 { width: 58px; height: 58px; }
-  .dla-kogo__veggie--6 { width: 68px; height: 68px; }
+  .dla-kogo__photo-frame { width: 260px; height: 260px; }
+  .dla-kogo__photo-circle { width: 210px; height: 210px; }
+  .dla-kogo__veg { transform: scale(0.85); }
   .wave svg { height: 50px; }
 }
 
