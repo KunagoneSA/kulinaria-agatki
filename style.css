@@ -1104,6 +1104,30 @@ section[id] {
   .kontakt__grid { grid-template-columns: 1fr; gap: 28px; }
 }
 
+.kontakt__cta-text {
+  margin-top: 12px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--green-dark);
+  opacity: 0.8;
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ============================================
    FOOTER
    ============================================ */
