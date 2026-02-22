@@ -969,7 +969,23 @@ section[id] {
    KONTAKT — pełna szerokość
    ============================================ */
 .kontakt {
-  margin-top: -1px;
+  margin-top: 0;
+}
+
+.kontakt__wave-top {
+  background: var(--orange);
+  line-height: 0;
+  overflow: hidden;
+}
+
+.kontakt__wave-top svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.kontakt__wave-top path {
+  fill: var(--green-dark);
 }
 
 .kontakt__header {
