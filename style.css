@@ -408,7 +408,7 @@ section[id] {
 }
 
 .dla-kogo h2 {
-  text-align: center;
+  text-align: left;
   font-size: 1.7rem;
   font-weight: 800;
   margin-bottom: 36px;
@@ -439,7 +439,6 @@ section[id] {
   object-fit: cover;
   background: var(--white);
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  animation: veggie-drift 4s ease-in-out infinite;
 }
 
 .dla-kogo__veggie--1 {
