@@ -161,19 +161,20 @@ section[id] {
 /* Górna część: wideo w tle z logo */
 .hero__top {
   position: relative;
-  overflow: hidden;
-  min-height: 420px;
+  overflow: visible;
+  min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f0f0f0;
+  background: transparent;
 }
 
 .hero__video {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  top: -60px;
+  left: -40px;
+  width: calc(100% + 80px);
+  height: calc(100% + 120px);
   object-fit: cover;
   pointer-events: none;
 }
@@ -273,7 +274,7 @@ section[id] {
 }
 
 @media (max-width: 768px) {
-  .hero__top { min-height: 300px; }
+  .hero__top { min-height: 360px; }
   .hero__logo-circle { width: 170px; height: 170px; }
   .hero__logo-misja { font-size: 2.2rem; }
   .hero__logo-na { font-size: 0.95rem; }
