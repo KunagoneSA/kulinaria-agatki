@@ -416,6 +416,7 @@ section[id] {
 
 .wave--orange-to-white {
   background: var(--orange);
+  margin-top: -1px;
 }
 
 .wave--orange-to-white path {
@@ -958,6 +959,7 @@ section[id] {
 .kontakt {
   background: var(--gray-light);
   padding: 70px 0;
+  margin-top: -1px;
 }
 
 .kontakt__card {
