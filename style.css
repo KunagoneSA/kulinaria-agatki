@@ -450,3 +450,67 @@ img {
     height: 160px;
   }
 }
+
+/* === DECLUTTERING === */
+.declutter {
+  background: var(--green);
+  color: var(--white);
+  padding: 60px 0;
+}
+
+.declutter__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.declutter__photo-rect {
+  width: 280px;
+  height: 200px;
+  border-radius: 16px;
+  background: var(--green-dark);
+  flex-shrink: 0;
+}
+
+.declutter h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.declutter__subtitle {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.declutter h3 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.declutter li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.declutter li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+}
+
+.declutter p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .declutter__inner {
+    flex-direction: column;
+  }
+  .declutter__photo-rect {
+    width: 100%;
+    height: 180px;
+  }
+}
