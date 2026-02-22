@@ -187,35 +187,10 @@ section[id] {
   z-index: 2;
 }
 
-.hero__logo-circle {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: var(--green-dark);
-  border: 5px solid var(--green-light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--white);
-  font-family: var(--font-heading);
-  font-weight: 900;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-}
-
-.hero__logo-misja {
-  display: block;
-  font-size: 3rem;
-  letter-spacing: 0.05em;
-  line-height: 1;
-}
-
-.hero__logo-na {
-  display: block;
-  font-size: 1.2rem;
-  letter-spacing: 0.18em;
-  margin-top: 2px;
+.hero__logo-img {
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.15));
 }
 
 /* Dolna część: białe tło ze zdjęciem i tekstem */
@@ -278,9 +253,7 @@ section[id] {
 
 @media (max-width: 768px) {
   .hero__top { height: 380px; }
-  .hero__logo-circle { width: 170px; height: 170px; }
-  .hero__logo-misja { font-size: 2.2rem; }
-  .hero__logo-na { font-size: 0.95rem; }
+  .hero__logo-img { width: 180px; }
   .hero__main { flex-direction: column; text-align: center; }
   .hero__photo-circle { width: 200px; height: 200px; }
   .hero__bottom { padding: 30px 0 40px; }
