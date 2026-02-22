@@ -57,6 +57,10 @@ img {
   padding: 0 20px;
 }
 
+section[id] {
+  scroll-margin-top: 70px;
+}
+
 /* === NAVBAR === */
 .navbar {
   position: fixed;
@@ -397,6 +401,7 @@ img {
 .omnie {
   background: var(--white);
   padding: 60px 0;
+  border-top: 3px solid var(--orange);
 }
 
 .omnie__inner {
