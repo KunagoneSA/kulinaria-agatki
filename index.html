@@ -85,7 +85,7 @@
 <!-- DLA KOGO -->
 <section class="dla-kogo" id="warsztaty">
   <div class="container">
-    <div class="dla-kogo__content fade-in">
+    <div class="dla-kogo__content">
       <div class="dla-kogo__photo">
         <div class="dla-kogo__photo-frame">
           <div class="dla-kogo__photo-circle">
@@ -131,7 +131,7 @@
 <!-- GDZIE I JAK -->
 <section class="gdzie" id="gdzie">
   <div class="gdzie__columns">
-    <div class="gdzie__col gdzie__col--left fade-in">
+    <div class="gdzie__col gdzie__col--left">
       <div class="gdzie__col-inner">
         <h2>GDZIE I JAK?</h2>
         <h3>Informacje organizacyjne</h3>
@@ -144,7 +144,7 @@
         </ul>
       </div>
     </div>
-    <div class="gdzie__col gdzie__col--right fade-in">
+    <div class="gdzie__col gdzie__col--right">
       <div class="gdzie__col-inner">
         <h2>JAK WYGLĄDA WARSZTAT?</h2>
         <h3>Jak wygląda nasza kulinarna misja?</h3>
@@ -176,7 +176,7 @@
 
 <!-- O MNIE -->
 <section class="omnie" id="omnie">
-  <div class="container omnie__content fade-in">
+  <div class="container omnie__content">
     <div class="omnie__photo">
       <div class="omnie__photo-frame">
         <div class="omnie__photo-circle">
@@ -226,7 +226,7 @@
       </div>
     </div>
     <div class="declutter__text-side">
-      <div class="declutter__text-inner fade-in">
+      <div class="declutter__text-inner">
         <span class="declutter__badge">USŁUGA DODATKOWA</span>
         <h2>DECLUTTERING KUCHNI</h2>
         <p class="declutter__subtitle">Bo dobra kuchnia to taka, która ułatwia życie.</p>
@@ -259,7 +259,7 @@
     </div>
   </div>
   <div class="kontakt__body">
-    <div class="container kontakt__grid fade-in">
+    <div class="container kontakt__grid">
       <div class="kontakt__info">
         <div class="kontakt__item">
           <span class="kontakt__icon">
@@ -339,17 +339,6 @@
     });
   });
 
-  // Fade-in on scroll
-  var fadeEls = document.querySelectorAll('.fade-in');
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  fadeEls.forEach(function(el) { observer.observe(el); });
 </script>
 </body>
 </html>
