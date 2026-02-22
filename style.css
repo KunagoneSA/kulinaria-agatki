@@ -406,6 +406,22 @@ section[id] {
   fill: var(--gray-light);
 }
 
+.wave--gray-to-orange {
+  background: var(--gray-light);
+}
+
+.wave--gray-to-orange path {
+  fill: var(--orange);
+}
+
+.wave--orange-to-white {
+  background: var(--orange);
+}
+
+.wave--orange-to-white path {
+  fill: var(--white);
+}
+
 
 /* ============================================
    DLA KOGO — tekst + ilustracja warzyw
@@ -791,17 +807,17 @@ section[id] {
 }
 
 /* ============================================
-   DECLUTTERING — okrągłe zdjęcie, jak design
+   DECLUTTERING — pomarańczowe tło, zdjęcie stockowe
    ============================================ */
 .declutter {
-  background: var(--green);
+  background: var(--orange);
   color: var(--white);
-  padding: 70px 0;
+  padding: 60px 0;
 }
 
 .declutter__inner {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
 }
 
@@ -809,24 +825,12 @@ section[id] {
   flex-shrink: 0;
 }
 
-.declutter__photo-circle {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #1a4a20, #1B5E20);
-  border: 5px solid var(--orange);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
-}
-
-.declutter__photo-label {
-  color: rgba(255,255,255,0.4);
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
+.declutter__photo-img {
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
 }
 
 .declutter h2 {
@@ -870,10 +874,9 @@ section[id] {
 }
 
 @media (max-width: 768px) {
-  .declutter { padding: 50px 0; }
-  .declutter__inner { flex-direction: column; align-items: center; text-align: center; }
-  .declutter__photo-circle { width: 180px; height: 180px; }
-  .declutter li { text-align: left; }
+  .declutter { padding: 40px 0; }
+  .declutter__inner { flex-direction: column; }
+  .declutter__photo-img { width: 100%; height: 200px; }
 }
 
 /* ============================================
