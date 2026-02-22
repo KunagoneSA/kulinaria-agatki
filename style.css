@@ -552,22 +552,42 @@ section[id] {
 }
 
 /* ============================================
-   GDZIE I JAK
+   GDZIE I JAK — dwie kolorowe kolumny
    ============================================ */
 .gdzie {
   background: var(--white);
-  padding: 70px 0;
 }
 
 .gdzie__columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+}
+
+.gdzie__col {
+  padding: 60px 40px;
+}
+
+.gdzie__col--left {
+  background: var(--green-light);
+  color: var(--white);
+}
+
+.gdzie__col--right {
+  background: var(--green-dark);
+  color: var(--white);
+}
+
+.gdzie__col-inner {
+  max-width: 500px;
+}
+
+.gdzie__col--left .gdzie__col-inner {
+  margin-left: auto;
 }
 
 .gdzie h2 {
   font-size: 1.5rem;
-  color: var(--green-dark);
+  color: var(--white);
   font-weight: 800;
   margin-bottom: 6px;
 }
@@ -577,6 +597,7 @@ section[id] {
   color: var(--orange);
   font-weight: 600;
   margin-bottom: 18px;
+  font-style: italic;
 }
 
 .gdzie li {
@@ -587,32 +608,42 @@ section[id] {
   line-height: 1.5;
 }
 
-.gdzie li::before {
+.gdzie__col--left li::before {
   content: '•';
   position: absolute;
   left: 0;
-  color: var(--orange);
+  color: var(--white);
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.2;
 }
 
+.gdzie__col--right li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--white);
+  font-weight: 400;
+}
+
 .gdzie__note {
-  margin-top: 18px;
+  margin-top: 20px;
   font-style: italic;
   font-size: 0.9rem;
-  color: #666;
+  color: rgba(255,255,255,0.85);
   line-height: 1.6;
 }
 
 .gdzie__cta {
   text-align: center;
-  margin-top: 45px;
+  padding: 40px 0;
+  background: var(--white);
 }
 
 @media (max-width: 768px) {
-  .gdzie { padding: 50px 0; }
-  .gdzie__columns { grid-template-columns: 1fr; gap: 36px; }
+  .gdzie__columns { grid-template-columns: 1fr; }
+  .gdzie__col { padding: 40px 24px; }
+  .gdzie__col-inner { max-width: 100%; }
 }
 
 /* ============================================
