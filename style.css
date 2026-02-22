@@ -194,10 +194,17 @@ section[id] {
 .hero__logo-large {
   position: relative;
   z-index: 2;
+  width: 180px;
+  height: 180px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__logo-img {
-  width: 250px;
+  width: 180px;
   height: auto;
   filter: drop-shadow(0 4px 20px rgba(0,0,0,0.15));
 }
