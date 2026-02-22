@@ -1119,21 +1119,9 @@ section[id] {
   justify-content: space-between;
 }
 
-.footer__logo {
-  font-family: var(--font-heading);
-  font-weight: 900;
-  line-height: 1;
-}
-
-.footer__logo-top {
-  display: block;
-  font-size: 1.2rem;
-}
-
-.footer__logo-bottom {
-  display: block;
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
+.footer__logo-img {
+  height: 50px;
+  width: auto;
 }
 
 .footer__links {
