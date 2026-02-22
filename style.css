@@ -377,6 +377,9 @@ section[id] {
   display: block;
   width: 100%;
   height: 80px;
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
 }
 
 .wave--to-orange {
@@ -471,11 +474,11 @@ section[id] {
   z-index: 2;
 }
 
-/* Dekoracyjne warzywa — watermark style */
+/* Dekoracyjne warzywa — białe sylwetki */
 .dla-kogo__veggie {
   position: absolute;
-  opacity: 0.13;
-  mix-blend-mode: multiply;
+  filter: brightness(0) invert(1);
+  opacity: 0.1;
   z-index: 1;
   pointer-events: none;
   animation: veggie-drift 5s ease-in-out infinite;
