@@ -577,7 +577,7 @@ section[id] {
 }
 
 .gdzie__col--left {
-  background: var(--green-light);
+  background: var(--green-dark);
   color: var(--white);
 }
 
