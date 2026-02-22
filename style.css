@@ -948,20 +948,28 @@ section[id] {
 
 @media (max-width: 768px) {
   .declutter__split {
-    grid-template-columns: 1fr;
+    display: block;
+    position: relative;
     min-height: auto;
   }
   .declutter__image-side {
-    height: 240px;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    clip-path: none;
+    z-index: 0;
   }
-  .declutter__text-side {
-    padding: 36px 24px;
-    margin-top: -20px;
+  .declutter__image-overlay {
+    background: linear-gradient(180deg, rgba(232, 121, 29, 0.85) 0%, rgba(200, 90, 10, 0.92) 100%);
   }
   .declutter__image-label {
-    bottom: 30px;
-    left: 18px;
+    display: none;
+  }
+  .declutter__text-side {
+    position: relative;
+    z-index: 1;
+    padding: 40px 24px;
+    background: transparent;
   }
 }
 
