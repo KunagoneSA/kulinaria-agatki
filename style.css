@@ -399,143 +399,135 @@ section[id] {
 }
 
 /* ============================================
-   DLA KOGO — dwukolumnowy z dekoracjami
+   DLA KOGO — tekst + ilustracja warzyw
    ============================================ */
 .dla-kogo {
   background: var(--orange);
   color: var(--white);
   padding: 40px 0 50px;
-  position: relative;
-  overflow: hidden;
 }
 
 .dla-kogo h2 {
   text-align: center;
   font-size: 1.7rem;
   font-weight: 800;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
   line-height: 1.3;
+}
+
+/* Layout: ilustracja + tekst */
+.dla-kogo__content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Klaster warzyw w białych kółkach */
+.dla-kogo__illustration {
+  flex-shrink: 0;
+}
+
+.dla-kogo__veggie-cluster {
   position: relative;
-  z-index: 2;
+  width: 320px;
+  height: 320px;
 }
 
-.dla-kogo__intro {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-bottom: 32px;
-  max-width: 780px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.dla-kogo__columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 32px;
-  position: relative;
-  z-index: 2;
-}
-
-.dla-kogo__col h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
-.dla-kogo__col li {
-  padding-left: 28px;
-  position: relative;
-  margin-bottom: 10px;
-  font-size: 0.93rem;
-  line-height: 1.5;
-}
-
-.dla-kogo__col li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.dla-kogo__motto {
-  text-align: center;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  border-top: 1px solid rgba(255,255,255,0.3);
-  padding-top: 24px;
-  max-width: 780px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-
-/* Dekoracyjne warzywa — białe sylwetki */
 .dla-kogo__veggie {
   position: absolute;
-  filter: brightness(0) invert(1);
-  opacity: 0.1;
-  z-index: 1;
-  pointer-events: none;
-  animation: veggie-drift 5s ease-in-out infinite;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--white);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  animation: veggie-drift 4s ease-in-out infinite;
 }
 
 .dla-kogo__veggie--1 {
-  width: 100px;
-  top: 4%;
-  left: 2%;
+  width: 90px; height: 90px;
+  top: 0; left: calc(50% - 45px);
   animation-delay: 0s;
 }
 
 .dla-kogo__veggie--2 {
-  width: 90px;
-  top: 8%;
-  right: 3%;
-  animation-delay: 0.8s;
+  width: 75px; height: 75px;
+  top: 55px; right: 5px;
+  animation-delay: 0.7s;
 }
 
 .dla-kogo__veggie--3 {
-  width: 110px;
-  bottom: 12%;
-  left: 1%;
-  animation-delay: 1.6s;
+  width: 85px; height: 85px;
+  bottom: 40px; right: 0;
+  animation-delay: 1.4s;
 }
 
 .dla-kogo__veggie--4 {
-  width: 80px;
-  bottom: 8%;
-  right: 2%;
-  animation-delay: 2.4s;
+  width: 80px; height: 80px;
+  bottom: 0; left: calc(50% - 40px);
+  animation-delay: 2.1s;
 }
 
 .dla-kogo__veggie--5 {
-  width: 70px;
-  top: 48%;
-  left: 6%;
-  animation-delay: 3.2s;
+  width: 70px; height: 70px;
+  bottom: 50px; left: 5px;
+  animation-delay: 2.8s;
 }
 
 .dla-kogo__veggie--6 {
-  width: 85px;
-  top: 42%;
-  right: 4%;
-  animation-delay: 4s;
+  width: 82px; height: 82px;
+  top: 50px; left: 0;
+  animation-delay: 3.5s;
 }
 
 @keyframes veggie-drift {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Tekst */
+.dla-kogo__text p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.dla-kogo__list {
+  margin: 20px 0;
+}
+
+.dla-kogo__list li {
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.dla-kogo__list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.dla-kogo__effect {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 16px;
 }
 
 @media (max-width: 768px) {
   .dla-kogo { padding: 30px 0 40px; }
   .dla-kogo h2 { font-size: 1.4rem; }
-  .dla-kogo__columns { grid-template-columns: 1fr; gap: 24px; }
-  .dla-kogo__veggie { opacity: 0.08; }
+  .dla-kogo__content { flex-direction: column; }
+  .dla-kogo__veggie-cluster { width: 260px; height: 260px; }
+  .dla-kogo__veggie--1 { width: 75px; height: 75px; }
+  .dla-kogo__veggie--2 { width: 62px; height: 62px; }
+  .dla-kogo__veggie--3 { width: 70px; height: 70px; }
+  .dla-kogo__veggie--4 { width: 65px; height: 65px; }
+  .dla-kogo__veggie--5 { width: 58px; height: 58px; }
+  .dla-kogo__veggie--6 { width: 68px; height: 68px; }
   .wave svg { height: 50px; }
 }
 
