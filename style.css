@@ -953,10 +953,25 @@ section[id] {
     min-height: auto;
   }
   .declutter__image-side {
-    display: none;
+    clip-path: none;
+    margin: 28px 24px 0;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  }
+  .declutter__image-overlay {
+    border-radius: 20px;
+  }
+  .declutter__image-label {
+    bottom: 14px;
+    left: 14px;
+  }
+  .declutter__image-label span {
+    font-size: 0.75rem;
+    padding: 8px 14px;
   }
   .declutter__text-side {
-    padding: 40px 24px;
+    padding: 28px 24px 40px;
   }
 }
 
