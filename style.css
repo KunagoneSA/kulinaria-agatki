@@ -954,25 +954,16 @@ section[id] {
 }
 
 /* ============================================
-   KONTAKT — karta z formularzem
+   KONTAKT — pełna szerokość
    ============================================ */
 .kontakt {
-  background: var(--gray-light);
-  padding: 70px 0;
   margin-top: -1px;
-}
-
-.kontakt__card {
-  background: var(--white);
-  border-radius: 20px;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
-  overflow: hidden;
 }
 
 .kontakt__header {
   background: var(--green-dark);
   color: var(--white);
-  padding: 36px 40px;
+  padding: 50px 0 40px;
 }
 
 .kontakt__header h2 {
@@ -994,10 +985,14 @@ section[id] {
 }
 
 .kontakt__body {
+  background: var(--gray-light);
+  padding: 50px 0 60px;
+}
+
+.kontakt__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding: 40px;
+  gap: 50px;
   align-items: start;
 }
 
@@ -1045,7 +1040,7 @@ section[id] {
   font-size: 0.93rem;
   margin-bottom: 14px;
   transition: border-color 0.2s, box-shadow 0.2s;
-  background: var(--gray-light);
+  background: var(--white);
 }
 
 .kontakt__form input:focus,
@@ -1053,7 +1048,6 @@ section[id] {
   outline: none;
   border-color: var(--orange);
   box-shadow: 0 0 0 3px rgba(232, 121, 29, 0.1);
-  background: var(--white);
 }
 
 .kontakt__form .btn {
@@ -1067,10 +1061,9 @@ section[id] {
 }
 
 @media (max-width: 768px) {
-  .kontakt { padding: 50px 0; }
-  .kontakt__header { padding: 28px 24px; }
-  .kontakt__body { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
-  .kontakt__card { border-radius: 14px; }
+  .kontakt__header { padding: 36px 0 28px; }
+  .kontakt__body { padding: 36px 0 44px; }
+  .kontakt__grid { grid-template-columns: 1fr; gap: 28px; }
 }
 
 /* ============================================
