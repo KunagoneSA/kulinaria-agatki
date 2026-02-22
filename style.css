@@ -392,3 +392,61 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* === O MNIE === */
+.omnie {
+  background: var(--white);
+  padding: 60px 0;
+}
+
+.omnie__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.omnie__photo-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  border: 4px solid var(--orange);
+}
+
+.omnie h2 {
+  font-size: 1.6rem;
+  color: var(--green-dark);
+  margin-bottom: 4px;
+}
+
+.omnie h3 {
+  font-size: 1rem;
+  color: var(--orange);
+  margin-bottom: 12px;
+}
+
+.omnie__name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.omnie p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .omnie__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .omnie__photo-circle {
+    width: 160px;
+    height: 160px;
+  }
+}
