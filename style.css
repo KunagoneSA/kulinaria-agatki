@@ -332,7 +332,7 @@ section[id] {
 }
 
 .hero__desc:last-of-type {
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -351,6 +351,7 @@ section[id] {
    ============================================ */
 .btn {
   display: inline-block;
+  margin-top: 20px;
   padding: 14px 36px;
   border-radius: 30px;
   font-family: var(--font-heading);
@@ -682,8 +683,12 @@ section[id] {
 
 .gdzie__cta-bar {
   text-align: center;
-  padding: 16px 0;
+  padding: 10px 0 20px;
   background: var(--green-dark);
+}
+
+.gdzie__cta-bar .btn {
+  margin-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -1103,6 +1108,7 @@ section[id] {
 
 .kontakt__form .btn {
   width: 100%;
+  margin-top: 10px;
   padding: 15px;
 }
 
