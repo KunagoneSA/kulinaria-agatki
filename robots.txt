@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kunagonesa.github.io/kulinaria-agatki/sitemap.xml

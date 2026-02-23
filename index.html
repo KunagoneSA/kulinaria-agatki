@@ -6,6 +6,8 @@
   <title>Misja na Talerzu — Warsztaty kulinarne</title>
   <meta name="description" content="Indywidualne warsztaty gotowania w Oświęcimiu. Naucz się gotować zdrowo, smacznie i bez stresu.">
   <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="canonical" href="https://kunagonesa.github.io/kulinaria-agatki/">
+  <meta name="robots" content="index, follow">
   <!-- Open Graph -->
   <meta property="og:title" content="Misja na Talerzu — Warsztaty kulinarne">
   <meta property="og:description" content="Indywidualne warsztaty kulinarne w Oświęcimiu. Zdrowe gotowanie może być proste, sycące i na każdą kieszeń.">
@@ -13,10 +15,143 @@
   <meta property="og:url" content="https://kunagonesa.github.io/kulinaria-agatki/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pl_PL">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Misja na Talerzu — Warsztaty kulinarne">
+  <meta name="twitter:description" content="Indywidualne warsztaty kulinarne w Oświęcimiu. Zdrowe gotowanie może być proste, sycące i na każdą kieszeń.">
+  <meta name="twitter:image" content="https://kunagonesa.github.io/kulinaria-agatki/img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://kunagonesa.github.io/kulinaria-agatki/#business",
+        "name": "Misja na Talerzu",
+        "description": "Indywidualne warsztaty kulinarne w Oświęcimiu. Zdrowe gotowanie może być proste, sycące, naprawdę smaczne i na każdą kieszeń.",
+        "url": "https://kunagonesa.github.io/kulinaria-agatki/",
+        "image": "https://kunagonesa.github.io/kulinaria-agatki/img/logo.png",
+        "telephone": "+48503802961",
+        "email": "agatawiktoriaolejniczak@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Oświęcim",
+          "addressRegion": "Małopolska",
+          "addressCountry": "PL"
+        },
+        "areaServed": [
+          {
+            "@type": "State",
+            "name": "Małopolska"
+          },
+          {
+            "@type": "State",
+            "name": "Śląsk"
+          }
+        ],
+        "founder": {
+          "@id": "https://kunagonesa.github.io/kulinaria-agatki/#person"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Usługi",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://kunagonesa.github.io/kulinaria-agatki/#warsztaty",
+                "name": "Indywidualne warsztaty kulinarne",
+                "description": "Trzygodzinne spotkania 1:1 w Oświęcimiu lub w domu klienta. Wspólne gotowanie, dopasowane menu, praktyczna wiedza kulinarna. Gotowe dania zabierasz do domu.",
+                "provider": { "@id": "https://kunagonesa.github.io/kulinaria-agatki/#business" },
+                "areaServed": "Oświęcim i okolice (Małopolska, Śląsk)",
+                "serviceType": "Warsztaty kulinarne"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://kunagonesa.github.io/kulinaria-agatki/#decluttering",
+                "name": "Decluttering kuchni",
+                "description": "Ocena wyposażenia kuchni, porządkowanie sprzętów i produktów, stworzenie systemu ułatwiającego codzienne gotowanie.",
+                "provider": { "@id": "https://kunagonesa.github.io/kulinaria-agatki/#business" },
+                "serviceType": "Organizacja kuchni"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://kunagonesa.github.io/kulinaria-agatki/#person",
+        "name": "Agata Olejniczak",
+        "jobTitle": "Prowadząca warsztaty kulinarne",
+        "description": "Energiczna kucharka z doświadczeniem w marketingu i pasją do zdrowego stylu życia. Założycielka projektu Misja na Talerzu.",
+        "worksFor": { "@id": "https://kunagonesa.github.io/kulinaria-agatki/#business" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://kunagonesa.github.io/kulinaria-agatki/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Dla kogo są warsztaty kulinarne Misja na Talerzu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Warsztaty są dla osób, które chcą jeść zdrowiej, ale nie wiedzą jak zacząć, myślą, że nie umieją gotować, są zmęczone dietami i efektem jojo, nie mają czasu na planowanie posiłków, lub chcą kupować sprytnie bez przepłacania."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak wygląda warsztat kulinarny?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Warsztat trwa ok. 3 godziny. Spotykamy się w kuchni w Oświęcimiu lub w domu klienta. Wspólnie ustalamy menu dopasowane do potrzeb i budżetu, gotujemy krok po kroku, a gotowe dania zabierasz do domu. Bez oceniania, bez presji."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Gdzie odbywają się warsztaty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Warsztaty odbywają się w Oświęcimiu (w dobrze wyposażonej kuchni) lub w domu klienta. Oferta skierowana jest do mieszkańców Małopolski i Śląska."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czym jest decluttering kuchni?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To usługa dodatkowa polegająca na ocenie wyposażenia kuchni, uporządkowaniu sprzętów i produktów spożywczych, oraz stworzeniu systemu, który sprawi, że gotowanie będzie łatwiejsze i przyjemniejsze."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ile kosztuje warsztat kulinarny?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Szczegóły cenowe ustalane są indywidualnie. Skontaktuj się mailowo lub telefonicznie, aby umówić swoją kulinarną misję."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://kunagonesa.github.io/kulinaria-agatki/",
+        "name": "Misja na Talerzu",
+        "description": "Indywidualne warsztaty kulinarne w Oświęcimiu",
+        "inLanguage": "pl"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -39,6 +174,8 @@
     </ul>
   </div>
 </nav>
+
+<main>
 
 <!-- HERO -->
 <section class="hero" id="home">
@@ -293,6 +430,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="footer">
