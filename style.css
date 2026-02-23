@@ -610,7 +610,7 @@ section[id] {
 }
 
 .gdzie__col {
-  padding: 60px 40px;
+  padding: 60px 40px 30px;
 }
 
 .gdzie__col--left {
@@ -683,7 +683,7 @@ section[id] {
 
 .gdzie__cta-bar {
   text-align: center;
-  padding: 10px 0 20px;
+  padding: 0 0 20px;
   background: var(--green-dark);
 }
 
