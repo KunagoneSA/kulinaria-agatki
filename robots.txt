@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://misjanatalerzu.pl/sitemap.xml
+Sitemap: https://kunagonesa.github.io/kulinaria-agatki/sitemap.xml
