@@ -471,11 +471,16 @@
   window.addEventListener('scroll', function() {
     var scrollY = window.scrollY + 100;
     var current = '';
-    sections.forEach(function(section) {
-      if (scrollY >= section.offsetTop) {
-        current = section.getAttribute('id');
-      }
-    });
+    var atBottom = (window.innerHeight + window.scrollY) >= (document.body.scrollHeight - 50);
+    if (atBottom) {
+      current = sections[sections.length - 1].getAttribute('id');
+    } else {
+      sections.forEach(function(section) {
+        if (scrollY >= section.offsetTop) {
+          current = section.getAttribute('id');
+        }
+      });
+    }
     navLinks.forEach(function(link) {
       link.classList.remove('navbar__link--active');
       if (link.getAttribute('href') === '#' + current) {

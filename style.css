@@ -422,6 +422,7 @@ section[id] {
 
 .wave--gray-to-orange {
   background: var(--gray-light);
+  margin-bottom: -1px;
 }
 
 .wave--gray-to-orange path {
@@ -697,6 +698,7 @@ section[id] {
 @media (max-width: 768px) {
   .gdzie__columns { grid-template-columns: 1fr; }
   .gdzie__col { padding: 24px 24px; }
+  .gdzie__col--right { padding-top: 0; }
   .gdzie__col-inner { max-width: 100%; }
 }
 
