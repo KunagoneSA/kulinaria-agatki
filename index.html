@@ -4,13 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LG4MG1EYW"></script>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+    (function(){
+      try {
+        var stored = localStorage.getItem('mnt_cookie_consent');
+        if (stored === 'granted') {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LG4MG1EYW"></script>
+  <script>
     gtag('js', new Date());
-    gtag('config', 'G-1LG4MG1EYW');
+    gtag('config', 'G-1LG4MG1EYW', { 'anonymize_ip': true });
   </script>
 
   <title>Misja na Talerzu — Warsztaty kulinarne</title>
@@ -23,6 +40,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="canonical" href="https://misjanatalerzu.pl/">
   <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="googleb3900aa3b9ac5fdb.html">
   <!-- Open Graph -->
   <meta property="og:title" content="Misja na Talerzu — Warsztaty kulinarne">
   <meta property="og:description" content="Indywidualne warsztaty kulinarne w Oświęcimiu. Zdrowe gotowanie może być proste, sycące i na każdą kieszeń.">
@@ -441,6 +459,10 @@
         <input type="text" name="imie" placeholder="Twoje imię" aria-label="Imię" required>
         <input type="tel" name="telefon" placeholder="Numer telefonu" aria-label="Telefon" required>
         <textarea name="wiadomosc" placeholder="Napisz wiadomość..." rows="5" aria-label="Wiadomość" required></textarea>
+        <label class="kontakt__consent">
+          <input type="checkbox" name="_zgoda_rodo" required>
+          <span>Zapoznałam/em się z <a href="/polityka" target="_blank" rel="noopener">Polityką prywatności</a> oraz <a href="/regulamin" target="_blank" rel="noopener">Regulaminem</a>. Wyrażam zgodę na przetwarzanie moich danych osobowych (imię, telefon) w celu odpowiedzi na moje zapytanie i ewentualnego umówienia warsztatu.</span>
+        </label>
         <button type="submit" class="btn btn--green">Zgłoś się po swoją kulinarną misję</button>
       </form>
     </div>
@@ -462,8 +484,61 @@
       <li><a href="#omnie">O mnie</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
+    <ul class="footer__legal">
+      <li><a href="/polityka">Polityka prywatności</a></li>
+      <li><a href="/regulamin">Regulamin</a></li>
+      <li><a href="#" id="cookie-settings-link">Ustawienia cookies</a></li>
+    </ul>
   </div>
 </footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Zgoda na pliki cookies" hidden>
+  <div class="cookie-banner__inner">
+    <p class="cookie-banner__text">
+      Używamy plików cookies do analizy ruchu na stronie (Google Analytics). Dane są zanonimizowane. Możesz zaakceptować lub odrzucić — Twoja decyzja jest zapamiętywana. Szczegóły w <a href="/polityka">Polityce prywatności</a>.
+    </p>
+    <div class="cookie-banner__buttons">
+      <button type="button" class="cookie-banner__btn cookie-banner__btn--reject" id="cookie-reject">Odrzucam</button>
+      <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" id="cookie-accept">Akceptuję analitykę</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'mnt_cookie_consent';
+  var banner = document.getElementById('cookie-banner');
+  var acceptBtn = document.getElementById('cookie-accept');
+  var rejectBtn = document.getElementById('cookie-reject');
+  var settingsLink = document.getElementById('cookie-settings-link');
+
+  function showBanner() { if (banner) banner.hidden = false; }
+  function hideBanner() { if (banner) banner.hidden = true; }
+
+  function setConsent(value) {
+    try { localStorage.setItem(STORAGE_KEY, value); } catch(e) {}
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', {
+        'analytics_storage': value === 'granted' ? 'granted' : 'denied'
+      });
+    }
+    hideBanner();
+  }
+
+  var stored = null;
+  try { stored = localStorage.getItem(STORAGE_KEY); } catch(e) {}
+  if (!stored) showBanner();
+
+  if (acceptBtn) acceptBtn.addEventListener('click', function(){ setConsent('granted'); });
+  if (rejectBtn) rejectBtn.addEventListener('click', function(){ setConsent('denied'); });
+  if (settingsLink) settingsLink.addEventListener('click', function(e){
+    e.preventDefault();
+    try { localStorage.removeItem(STORAGE_KEY); } catch(err) {}
+    showBanner();
+  });
+})();
+</script>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function() {

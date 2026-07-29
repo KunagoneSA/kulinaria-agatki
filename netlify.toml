@@ -14,3 +14,13 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/polityka"
+  to = "/polityka.html"
+  status = 200
+
+[[redirects]]
+  from = "/regulamin"
+  to = "/regulamin.html"
+  status = 200
+
