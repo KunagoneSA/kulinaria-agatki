@@ -1,5 +1,5 @@
 :root {
-  --orange: #E8791D;
+  --orange: #C86200;
   --orange-light: #F5943E;
   --green-dark: #08534F;
   --green: #0A6B60;
@@ -1211,7 +1211,7 @@ section[id] {
 }
 .kontakt__consent span { flex: 1; }
 .kontakt__consent a { color: #08534F; text-decoration: underline; }
-.kontakt__consent a:hover { color: #E8791D; }
+.kontakt__consent a:hover { color: #C86200; }
 
 /* --- Footer legal links --- */
 .footer__legal {
@@ -1278,7 +1278,7 @@ section[id] {
 }
 .cookie-banner__btn--reject:hover { background: rgba(255,255,255,0.1); }
 .cookie-banner__btn--accept {
-  background: #E8791D;
+  background: #C86200;
   color: #fff;
 }
 .cookie-banner__btn--accept:hover { background: #F5943E; }
@@ -1335,7 +1335,7 @@ section[id] {
   top: 50%;
   transform: translateY(-50%);
   font-size: 24px;
-  color: #E8791D;
+  color: #C86200;
   font-weight: 400;
   transition: transform 0.2s ease;
 }
