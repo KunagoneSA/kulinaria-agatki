@@ -1,0 +1,33 @@
+{
+  "name": "Misja na Talerzu — Warsztaty kulinarne",
+  "short_name": "Misja na Talerzu",
+  "description": "Indywidualne warsztaty kulinarne 1:1 w Oświęcimiu. Uczę gotować zdrowo, bez rygoru i z przyjemnością.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF7F1",
+  "theme_color": "#08534F",
+  "lang": "pl",
+  "scope": "/",
+  "categories": ["food", "lifestyle", "education"],
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
