@@ -58,8 +58,12 @@
   <meta name="twitter:image" content="https://misjanatalerzu.pl/img/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/logo.png">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -217,7 +221,7 @@
 <section class="hero" id="home">
   <!-- Górna część: wideo w tle z logo na środku -->
   <div class="hero__top">
-    <video class="hero__video" autoplay muted loop playsinline>
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="img/header-bg-poster.jpg">
       <source src="img/header-bg.mp4" type="video/mp4">
     </video>
     <div class="hero__logo-large">
@@ -414,6 +418,35 @@
         </ul>
         <p class="declutter__closing">Dobrze zorganizowana kuchnia naprawdę robi różnicę. Często wystarczy kilka trafnych zmian, żeby gotowanie zaczęło zajmować mniej czasu i&nbsp;sprawiać więcej przyjemności.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <h2 id="faq-heading" class="faq__heading">Najczęściej zadawane pytania</h2>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary>Dla kogo są warsztaty kulinarne Misja na Talerzu?</summary>
+        <p>Warsztaty są dla osób, które chcą jeść zdrowiej, ale nie wiedzą jak zacząć, myślą, że nie umieją gotować, są zmęczone dietami i efektem jojo, nie mają czasu na planowanie posiłków, lub chcą kupować sprytnie bez przepłacania.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Jak wygląda warsztat kulinarny?</summary>
+        <p>Warsztat trwa ok. 3 godziny. Spotykamy się w kuchni w Oświęcimiu lub w domu klienta. Wspólnie ustalamy menu dopasowane do potrzeb i budżetu, gotujemy krok po kroku, a gotowe dania zabierasz do domu. Bez oceniania, bez presji.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Gdzie odbywają się warsztaty?</summary>
+        <p>Warsztaty odbywają się w Oświęcimiu (w dobrze wyposażonej kuchni) lub w domu klienta. Oferta skierowana jest do mieszkańców Małopolski i Śląska.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Czym jest decluttering kuchni?</summary>
+        <p>To usługa dodatkowa polegająca na ocenie wyposażenia kuchni, uporządkowaniu sprzętów i produktów spożywczych, oraz stworzeniu systemu, który sprawi, że gotowanie będzie łatwiejsze i przyjemniejsze.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Ile kosztuje warsztat kulinarny?</summary>
+        <p>Szczegóły cenowe ustalane są indywidualnie i&nbsp;zależą od zakresu programu, miejsca, liczby uczestników oraz kosztów zakupów spożywczych. Skontaktuj się przez formularz poniżej, mailowo lub telefonicznie, aby umówić swoją kulinarną misję.</p>
+      </details>
     </div>
   </div>
 </section>
