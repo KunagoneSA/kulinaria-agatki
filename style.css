@@ -1434,9 +1434,9 @@ a { transition: color 0.2s ease; }
 .vhero h1 { font-size: 2.2rem; line-height: 1.15; color: var(--green-dark); font-weight: 800; margin-bottom: 18px; }
 .vhero__h1-sub { display: block; font-size: 1.05rem; font-weight: 600; margin-top: 8px; color: var(--green); }
 .vlead { font-size: 1.02rem; color: #444; margin-bottom: 22px; max-width: 34em; }
-.vprice { display: flex; align-items: baseline; gap: 12px; margin-bottom: 24px; }
+.vprice { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
 .vprice__num { font-family: var(--font-heading); font-weight: 800; font-size: 2.4rem; color: var(--orange); line-height: 1; }
-.vprice__lbl { font-size: 0.95rem; color: #555; }
+.vprice__lbl { font-size: 0.95rem; color: #555; line-height: 1.4; padding-left: 16px; border-left: 2px solid #F3D9BF; }
 .vhero__img img { width: 100%; height: auto; border-radius: 14px; box-shadow: 0 18px 40px rgba(8, 83, 79, 0.18); transform: rotate(1.5deg); }
 .vblock { padding: 52px 0; }
 .vblock--alt { background: #F3F8F7; }
