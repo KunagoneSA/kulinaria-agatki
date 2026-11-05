@@ -316,6 +316,15 @@ section[id] {
   font-weight: 800;
 }
 
+.hero__h1-sub {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--green-dark);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
 .hero__tagline {
   font-size: 1.05rem;
   font-weight: 700;
