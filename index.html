@@ -61,6 +61,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap"></noscript>
+  <link rel="preload" as="image" href="img/header-bg-poster.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
   <link rel="icon" type="image/png" sizes="192x192" href="img/logo.png">
@@ -249,9 +250,15 @@
 <section class="hero" id="home">
   <!-- Górna część: wideo w tle z logo na środku -->
   <div class="hero__top">
-    <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="img/header-bg-poster.jpg">
-      <source src="img/header-bg.mp4" type="video/mp4">
-    </video>
+    <video class="hero__video" id="heroVideo" muted loop playsinline preload="none" poster="img/header-bg-poster.webp" aria-hidden="true"></video>
+    <script>
+      (function(){
+        var v=document.getElementById('heroVideo');
+        if (!v || !window.matchMedia('(min-width: 769px)').matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var s=document.createElement('source'); s.src='img/header-bg.mp4'; s.type='video/mp4'; v.appendChild(s);
+        v.preload='auto'; v.autoplay=true; v.load(); var p=v.play(); if (p && p.catch) p.catch(function(){});
+      })();
+    </script>
     <div class="hero__logo-large">
       <picture>
         <source srcset="img/logo.webp" type="image/webp">
@@ -267,7 +274,7 @@
         <div class="hero__photo-frame">
           <div class="hero__photo-circle">
             <picture>
-              <source srcset="img/agata.webp" type="image/webp">
+              <source srcset="img/agata-520.webp 520w, img/agata.webp 800w" sizes="(max-width: 768px) 70vw, 300px" type="image/webp">
               <img src="img/agata.jpg" alt="Agata Olejniczak — prowadząca indywidualne warsztaty kulinarne Misja na Talerzu" class="hero__photo-img" width="260" height="260">
             </picture>
           </div>
@@ -300,7 +307,7 @@
         <div class="dla-kogo__photo-frame">
           <div class="dla-kogo__photo-circle">
             <picture>
-              <source srcset="img/agata2.webp" type="image/webp">
+              <source srcset="img/agata2-520.webp 520w, img/agata2.webp 800w" sizes="(max-width: 768px) 70vw, 300px" type="image/webp">
               <img src="img/agata2.jpg" alt="Agata Olejniczak podczas warsztatów kulinarnych" class="dla-kogo__photo-img" loading="lazy" width="260" height="260">
             </picture>
           </div>
@@ -388,7 +395,7 @@
       <div class="omnie__photo-frame">
         <div class="omnie__photo-circle">
           <picture>
-            <source srcset="img/agata3.webp" type="image/webp">
+            <source srcset="img/agata3-520.webp 520w, img/agata3.webp 800w" sizes="(max-width: 768px) 70vw, 300px" type="image/webp">
             <img src="img/agata3.jpg" alt="Agata Olejniczak — kucharka i założycielka Misja na Talerzu" class="omnie__photo-img" loading="lazy" width="260" height="260">
           </picture>
         </div>
