@@ -1481,3 +1481,18 @@ a { transition: color 0.2s ease; }
 /* Linki w tekście sekcji „Dla kogo” (pomarańczowe tło) */
 .dla-kogo__text p a, .gdzie li a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .dla-kogo__text p a:hover, .gdzie li a:hover { text-decoration-thickness: 2px; }
+
+/* Poradnik (artykuł) */
+.art-meta { font-size: 0.9rem; color: #777; }
+.art .container { max-width: 760px; }
+.art h2 { font-size: 1.45rem; margin: 40px 0 14px; }
+.art p { margin-bottom: 14px; line-height: 1.75; }
+.art .vlist { margin-bottom: 18px; }
+.art a { color: var(--orange); }
+.art-tldr { background: #F3F8F7; border-left: 4px solid var(--green-dark); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 8px; }
+.art-tldr p { margin: 0; }
+.art .vnote { margin-top: 36px; }
+.art .vnote a.btn { color: #fff; }
+.art-btn { margin-top: 6px; }
+/* Linki w sekcji declutteringu na stronie głównej */
+.declutter__text-inner p a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }

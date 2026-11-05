@@ -35,6 +35,11 @@
   force = true
 
 [[redirects]]
+  from = "/organizacja-kuchni"
+  to = "/organizacja-kuchni.html"
+  status = 200
+
+[[redirects]]
   from = "/warsztaty-kulinarne-slask"
   to = "/warsztaty-kulinarne-slask.html"
   status = 200
