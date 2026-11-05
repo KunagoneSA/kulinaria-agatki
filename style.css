@@ -1479,5 +1479,5 @@ a { transition: color 0.2s ease; }
 }
 
 /* Linki w tekście sekcji „Dla kogo” (pomarańczowe tło) */
-.dla-kogo__text p a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
-.dla-kogo__text p a:hover { text-decoration-thickness: 2px; }
+.dla-kogo__text p a, .gdzie li a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.dla-kogo__text p a:hover, .gdzie li a:hover { text-decoration-thickness: 2px; }
