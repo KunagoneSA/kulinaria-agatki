@@ -35,6 +35,11 @@
   force = true
 
 [[redirects]]
+  from = "/nauka-gotowania"
+  to = "/nauka-gotowania.html"
+  status = 200
+
+[[redirects]]
   from = "/voucher"
   to = "/voucher.html"
   status = 200
