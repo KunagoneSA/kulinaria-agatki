@@ -35,6 +35,11 @@
   force = true
 
 [[redirects]]
+  from = "/voucher"
+  to = "/voucher.html"
+  status = 200
+
+[[redirects]]
   from = "/polityka"
   to = "/polityka.html"
   status = 200
